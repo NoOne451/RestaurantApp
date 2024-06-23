@@ -12,11 +12,11 @@ type TestimonyItemProps = {
   data: DataItem;
 };
 export const TestimonyItem: React.FC<TestimonyItemProps> = ({ data }) => (
-  <div className="flex flex-col justify-around bg-brown p-8 ">
+  <div className="flex flex-col justify-around p-8 bg-brown ">
     <div className="text-justify ">{data.feedback}</div>
     <div className="flex gap-[15px] ">
       <img
-        src="../src/assets/about.jpg"
+        src="/about.jpg"
         className="h-[32px] w-[32px] rounded-[32px]"
         alt=""
       />

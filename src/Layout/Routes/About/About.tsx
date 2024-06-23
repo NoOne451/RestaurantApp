@@ -1,5 +1,5 @@
-import React from "react";
-import "../../../App.css";
+import React from 'react';
+import '../../../App.css';
 type PropType = {
   title: string;
   desc: string;
@@ -12,7 +12,7 @@ const About: React.FC<aboutProps> = ({ about }) => {
     <div className="p-[15px] flex flex-col md:flex-row md:justify-between">
       <div className=" md:w-50% md:h-600px ">
         <img
-          src="../src/assets/about.jpg"
+          src="/about.jpg"
           className="w-[800px] h-[600px] object-cover"
           alt=""
         />
@@ -22,7 +22,7 @@ const About: React.FC<aboutProps> = ({ about }) => {
           <div className="text-[40px] text-brown font-[500] leading-[50px]">
             {about[0].title}
           </div>
-          <div className=" text-justify text-gray">{about[0].desc}</div>
+          <div className="text-justify text-gray">{about[0].desc}</div>
         </div>
       </div>
     </div>

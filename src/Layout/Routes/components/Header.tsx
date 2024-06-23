@@ -1,6 +1,6 @@
 // import "../../../App.css";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export const Header = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -14,17 +14,17 @@ export const Header = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  const navLinks = ["Home", "Menu", "About", "Contact"];
+  const navLinks = ['Home', 'Menu', 'About', 'Contact'];
   return (
     <nav
       className={`w-[100%] h-[40px]  bg-black md:h-[80px] md:bg-transparent flex justify-center border-b-[1px] border-borderBtm z-[2]  px-[2rem] py-[1.5rem] md:py-[0.9rem] md:px-[5rem] 
-        ${isFixed ? "fixed animate-slide-down backdrop-blur" : "absolute"}`}
+        ${isFixed ? 'fixed animate-slide-down backdrop-blur' : 'absolute'}`}
     >
       <div className="w-[100dvw] flex items-center justify-between">
         <div className="flex flex-col items-center font-[700] leading-none">
@@ -46,8 +46,8 @@ export const Header = () => {
           <div className="flex gap-[60px] items-center">
             <a href="">
               <img
-                src="../src/assets/cart_shopping_icon.svg"
-                className=" cursor-pointer"
+                src="/cart_shopping_icon.svg"
+                className="cursor-pointer "
               ></img>
             </a>
 

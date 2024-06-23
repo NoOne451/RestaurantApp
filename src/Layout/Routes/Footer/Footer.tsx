@@ -3,7 +3,7 @@ export const Footer = () => {
     <div className="px-[30px] pt-[50px] pb-[100px]  capitalize text-justify flex flex-col  md:flex-row md:justify-around">
       <div className="md:w-[300px]">
         <p className="text-[25px] font-[400]">Sign up with OTP</p>
-        <div className=" ">
+        <div className="">
           <p className="pt-[30px] pb-[15px]">
             "Discover the flavors of our authentic, mouthwatering biryani by
             signing up today!"
@@ -42,7 +42,7 @@ export const Footer = () => {
           <p>
             Email:
             <span>
-              <a href="" className=" hover:text-brown ml-1">
+              <a href="" className="ml-1 hover:text-brown">
                 vimalofficial02@gmail.com
               </a>
             </span>
@@ -59,16 +59,12 @@ export const Footer = () => {
         </div>
         <div className="flex items-center pt-[10px] gap-3 [&>a>img]:cursor-pointer [&>a>img]:w-[32px] [&>a>img]:h-[32px] [&>a>img]:transition-all [&>a>img]:duration-500 [&>a>img]:rounded-lg">
           <a href="">
-            <img
-              src="../src/assets/instagram_icon.svg"
-              className="hover:bg-insta "
-              alt=""
-            />
+            <img src="/instagram_icon.svg" className="hover:bg-insta " alt="" />
           </a>
           <a href="">
             <img
-              src="../src/assets/whatsapp_icon.svg"
-              className=" hover:bg-green-400 "
+              src="/whatsapp_icon.svg"
+              className=" hover:bg-green-400"
               alt=""
             />
           </a>
